@@ -1,3 +1,5 @@
+###basic lists & how to edit them, I'd like a motorcycle...
+
 motorcycles = ['honda', 'ducati', 'vespa']
 print(motorcycles)
 
