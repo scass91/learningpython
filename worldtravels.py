@@ -1,7 +1,9 @@
 ###world travel goals
 locations = ["Vietnam", "Australia", "Madives", "Russia", "China"]
 
-print("Here is the list of places I really would like to go to:")
+print("I have " + str(len(locations)) + " places I would really like to visit.")
+
+print("\nHere is the list of places I really would like to go to:")
 print(locations)
 
 print("\nIn alphabetical order, I would like to visit:")
