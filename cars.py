@@ -27,3 +27,11 @@ if new_car not in cars:
 
 
 ###booleans are either true or false
+
+car = "subaru"
+print("\nIs car == 'subaru'? I'll predict True")
+print(car == "subaru")
+
+car = "alfa romeo"
+print("\nIs car =='Fiat'? I'll predict False")
+print(car == "Fiat")
