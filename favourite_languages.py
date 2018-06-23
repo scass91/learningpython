@@ -6,9 +6,9 @@ favourite_languages = {
     'phil': 'python'
     }
 
-###print("Sarah's favourite language is " +
-###    favourite_languages['sarah'].title() +
-###    ".")
+print("Sarah's favourite language is " +
+    favourite_languages['sarah'].title() +
+   ".")
 
 ###loop through each key-value pair to print everyone's fav lang
 
@@ -39,3 +39,18 @@ for name in favourite_languages.keys():
 
 if 'erin' not in favourite_languages.keys():
     print('Erin, please take the poll!')
+
+
+###loop through all values
+
+print("The following languages have been mentioned:")
+for language in favourite_languages.values():
+    print(language.title())
+
+
+###loop through values and ignore any repeats using set()
+###set() builds a unique list of items
+
+print("The following languages have been mentioned:")
+for language in set(favourite_languages.values()):
+    print(language.title())
