@@ -10,7 +10,7 @@ favourite_languages = {
 ###    favourite_languages['sarah'].title() +
 ###    ".")
 
-###loop through dictionary to print everyone's fav lang
+###loop through each key-value pair to print everyone's fav lang
 
 for name, language in favourite_languages.items():
     print(name.title() + "'s favourite language is " +
