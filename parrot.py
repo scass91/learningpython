@@ -1,7 +1,13 @@
 ###June 27th 2018
+###With a flag
 prompt = "\nTell me something, I will repeat it back to you:"
 prompt += "\nEnter 'quit' to end this program. "
-message = ""
-while message != 'quit':
+
+active = True
+while active:
     message = input(prompt)
-    print(message)
+
+    if message == 'quit':
+        active = False
+    else:
+        print(message)
