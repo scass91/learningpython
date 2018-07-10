@@ -24,7 +24,8 @@ describe_pet(animal_type = "cat", pet_name = "smudge")
 #default values - if an argument value is provided in the function call by
 #default, you can exclude the dorresponding argument in the function called
 #using default values can simplify function calls & clarify ways functions are
-#used
+#used. These can be overwritten if, for example, a different animal_type is
+#input
 def describe_pet(pet_name, animal_type = "dog"):
     """Display information about a pet"""
     print("\nKatherine has a " + animal_type + ".")
