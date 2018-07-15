@@ -4,8 +4,9 @@
 #statement using an asterisk
 
 def make_pizza(*toppings):
-    """Print the list of requested toppings"""
-    print(toppings)
-
+    """Summarise the pizza which is about to be made"""
+    print("\nMaking a pizza with the following toppings: ")
+    for topping in toppings:
+        print("- " + topping)
 make_pizza("pepperoni")
 make_pizza("mushrooms", "salami", "extra cheese")
