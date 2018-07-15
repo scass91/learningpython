@@ -3,10 +3,14 @@
 #python allows for an arbitrary number of arguments to be made from the calling
 #statement using an asterisk
 
-def make_pizza(*toppings):
+#positional & arbitrary arguments can be used in combination
+
+def make_pizza(size, *toppings):
     """Summarise the pizza which is about to be made"""
-    print("\nMaking a pizza with the following toppings: ")
+    print("\nMaking a " + str(size) +
+         "-inch pizza with the following toppings: ")
     for topping in toppings:
         print("- " + topping)
-make_pizza("pepperoni")
-make_pizza("mushrooms", "salami", "extra cheese")
+        
+make_pizza(16, "pepperoni")
+make_pizza(11, "mushrooms", "salami", "extra cheese")
