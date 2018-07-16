@@ -14,5 +14,8 @@ def make_car(manufacturer, model, **vehicle_info):
         car[key] = value
     return car
 
-car = make_car("subaru", "outback", color="red", tow_package=True)
-print(car)
+my_subaru = make_car("subaru", "outback", color="red", tow_package=True)
+print(my_subaru)
+
+my_mercedes = make_car("mercedes", "a-class", color="grey", fuel="diesel")
+print(my_mercedes)
