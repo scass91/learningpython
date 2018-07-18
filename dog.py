@@ -17,7 +17,7 @@ class Dog():
     def roll_over(self):
         """simulate rolling over when commanded"""
         print(self.name.title() + " rolled over!")
-
+#instances
 my_dog = Dog("toe", 6)
 your_dog = Dog("sponge", 1)
 
