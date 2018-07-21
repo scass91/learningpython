@@ -23,14 +23,19 @@ class Car():
         """
         Set mileage to a given value.
         Reject mileage if lower than current"""
-        if mileage >= self.mileage:
-            self.mileage = mileage
+        self.mileage = mileage
+
+    def increase_mileage(self, miles):
+        """add a given amount to a vehicle mileage"""
+        if miles >=0:
+            self.mileage += miles
         else:
-            print("You can't roll back an odometer!")
-            quit
+            print("You can't remove miles from an odometer!")
+my_used_car = Car("toyota", "yaris", 2012)
+print(my_used_car.get_descriptive_name())
 
-my_new_car = Car("mercedes-benz" ,"a-class", 2018)
-print(my_new_car.get_descriptive_name())
+my_used_car.update_mileage(23000)
+my_used_car.read_mileage()
 
-my_new_car.update_mileage(10)
-my_new_car.read_mileage()
+my_used_car.increase_mileage(100)
+my_used_car.read_mileage()
