@@ -8,7 +8,7 @@ class Car():
         self.make = make
         self.model = model
         self.year = year
-        self.mileage = 0
+        self.mileage = 10
 
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name"""
@@ -20,10 +20,17 @@ class Car():
         print("This car has " + str(self.mileage) + " miles on it.")
 #modify attribute values through a method
     def update_mileage(self, mileage):
-        """Set milage to a given value"""
-        self.mileage = mileage
+        """
+        Set mileage to a given value.
+        Reject mileage if lower than current"""
+        if mileage >= self.mileage:
+            self.mileage = mileage
+        else:
+            print("You can't roll back an odometer!")
+            quit
 
 my_new_car = Car("mercedes-benz" ,"a-class", 2018)
 print(my_new_car.get_descriptive_name())
-my_new_car.update_mileage(23)
+
+my_new_car.update_mileage(10)
 my_new_car.read_mileage()
