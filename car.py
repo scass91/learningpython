@@ -23,7 +23,10 @@ class Car():
         """
         Set mileage to a given value.
         Reject mileage if lower than current"""
-        self.mileage = mileage
+        if mileage >= self.mileage:
+            self.mileage = mileage
+        else:
+            print("You can't remove miles from an odometer")
 
     def increase_mileage(self, miles):
         """add a given amount to a vehicle mileage"""
