@@ -34,11 +34,3 @@ class Car():
             self.mileage += miles
         else:
             print("You can't remove miles from an odometer!")
-my_used_car = Car("toyota", "yaris", 2012)
-print(my_used_car.get_descriptive_name())
-
-my_used_car.update_mileage(23000)
-my_used_car.read_mileage()
-
-my_used_car.increase_mileage(100)
-my_used_car.read_mileage()
